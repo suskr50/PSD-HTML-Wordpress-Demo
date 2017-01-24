@@ -1,0 +1,147 @@
+/* Kiwi Default Style */
+body svg.svg-symbol {
+    display: none;
+}
+
+
+.kiwi-default-style:before {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/* Sizes */
+body ul.kiwi-share-bar-wrapper {
+    margin: 15px 0 !important;
+    padding: 0 !important;
+}
+
+body ul.kiwi-share-bar-wrapper li.kiwi-share-icon  {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body ul.kiwi-share-bar-wrapper li.kiwi-share-icon:before {
+	display: none;
+}
+
+/* Large Size Styling */
+.kiwi-share-bar-wrapper.kiwi-large-size {
+	display: table;
+	width: 100%;
+}
+	.kiwi-share-bar-wrapper.kiwi-large-size .kiwi-share-icon { height: 44px;}
+	.kiwi-share-bar-wrapper.kiwi-large-size .kiwi-share-icon > a > div {height: 44px; }
+	.kiwi-share-bar-wrapper.kiwi-large-size .kiwi-share-icon svg {
+		width: 22px;
+		height: 22px;
+		margin-top: 11px;
+	}
+
+/* Medium Size Styling */
+.kiwi-share-bar-wrapper.kiwi-medium-size {width: 100%; }
+.kiwi-share-bar-wrapper.kiwi-medium-size .kiwi-share-icon { width: 100px; height: 33px;}
+.kiwi-share-bar-wrapper.kiwi-medium-size .kiwi-share-icon > a > div {height: 33px; }
+.kiwi-share-bar-wrapper.kiwi-medium-size .kiwi-share-icon svg {
+	width: 18px;
+	height: 18px;
+	margin-top: 7px;
+}
+
+/* Small Size Styling */
+.kiwi-share-bar-wrapper.kiwi-small-size {width: 100%; }
+.kiwi-share-bar-wrapper.kiwi-small-size .kiwi-share-icon { width: 50px; height: 24px;}
+.kiwi-share-bar-wrapper.kiwi-small-size .kiwi-share-icon > a > div {height: 24px; }
+.kiwi-share-bar-wrapper.kiwi-small-size .kiwi-share-icon svg {
+	width: 14px;
+	height: 14px;
+	margin-top: 5px;
+}
+
+
+    .kiwi-share-bar-wrapper .kiwi-share-icon a {
+        text-decoration: none;
+        border: 0;
+
+    }
+
+    .kiwi-share-icon svg {
+        position: relative;
+        font: 0/0 serif;
+        text-shadow: none;
+        color: transparent;
+        display: inline-block;
+        fill: #fff;
+        vertical-align: top;
+    }
+
+    .kiwi-share-bar-wrapper .kiwi-share-icon {
+        line-height: 0;
+        position: relative;
+        display: table-cell;
+        width: auto;
+        text-align: center;
+    }
+        .kiwi-share-icon:hover {
+            opacity: .6;
+        }
+
+        .kiwi-share-icon .kiwi-facebook-icon { background-color: #3B5998; }
+        .kiwi-share-icon .kiwi-twitter-icon {  background-color: #28AAE1; }
+        .kiwi-share-icon .kiwi-google-plus-icon { background-color: #DF3D1B; }
+        .kiwi-share-icon .kiwi-linkedin-icon { background-color: #0073B2; }
+        .kiwi-share-icon .kiwi-pinterest-icon { background-color: #AB171E; }
+        .kiwi-share-icon .kiwi-reddit-icon { background-color: #FF4500; }
+        .kiwi-share-icon .kiwi-email-icon { background-color: #FF8B00; }
+
+        .kiwi-share-icon .kiwi-facebook-icon,
+        .kiwi-share-icon .kiwi-twitter-icon,
+        .kiwi-share-icon .kiwi-google-plus-icon,
+        .kiwi-share-icon .kiwi-linkedin-icon,
+        .kiwi-share-icon .kiwi-pinterest-icon,
+        .kiwi-share-icon .kiwi-reddit-icon,
+        .kiwi-share-icon .kiwi-email-icon {
+            margin-right: 2px;
+        }
+
+        /* Styling */
+
+    /* 2. Pill Shaped */
+     .kiwi-pills-style .kiwi-facebook-icon,
+     .kiwi-pills-style .kiwi-twitter-icon,
+     .kiwi-pills-style .kiwi-google-plus-icon,
+     .kiwi-pills-style .kiwi-linkedin-icon,
+     .kiwi-pills-style .kiwi-pinterest-icon,
+     .kiwi-pills-style .kiwi-reddit-icon,
+     .kiwi-pills-style .kiwi-email-icon {
+        border-radius: 20%/50%;
+    }
+
+    /* 3. Shift Style */
+    .kiwi-shift-style .kiwi-facebook-icon,
+    .kiwi-shift-style .kiwi-twitter-icon,
+    .kiwi-shift-style .kiwi-google-plus-icon,
+    .kiwi-shift-style .kiwi-linkedin-icon,
+    .kiwi-shift-style .kiwi-pinterest-icon,
+    .kiwi-shift-style .kiwi-reddit-icon,
+    .kiwi-shift-style .kiwi-email-icon {
+        -webkit-transform: skew(-10deg);
+        -moz-transform: skew(-10deg);
+        -o-transform: skew(-10deg);
+        border-width: 1px;
+    }
+
+    /* 4. Leaf Style */
+    .kiwi-leaf-style .kiwi-facebook-icon,
+    .kiwi-leaf-style .kiwi-twitter-icon,
+    .kiwi-leaf-style .kiwi-google-plus-icon,
+    .kiwi-leaf-style .kiwi-linkedin-icon,
+    .kiwi-leaf-style .kiwi-pinterest-icon,
+    .kiwi-leaf-style .kiwi-reddit-icon,
+    .kiwi-leaf-style .kiwi-email-icon {
+        border-radius: 15px 0;
+        border-width: 1px;
+    }
+
+

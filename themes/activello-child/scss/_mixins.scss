@@ -1,0 +1,41 @@
+@mixin flexit($values,$values2) {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: $values;
+    -moz-box-pack: $values;
+    -ms-flex-pack: $values;
+    -webkit-justify-content: $values;
+    justify-content: $values;
+    -webkit-box-align: $values2;
+    -moz-box-align: $values2;
+    -ms-flex-align: $values2;
+    -webkit-align-items: $values2;
+    align-items: $values2;
+}
+
+@mixin set-font($family,$size,$weight) {
+  font-family:$family;
+  font-size:$size;
+  font-weight:$weight;
+}
+
+@mixin hoverover-gradient () {
+background: rgba(243,129,129,1);
+background: -moz-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(243,129,129,1) 1%, rgba(252,227,138,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,129,129,1)), color-stop(1%, rgba(243,129,129,1)), color-stop(100%, rgba(252,227,138,1)));
+background: -webkit-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(243,129,129,1) 1%, rgba(252,227,138,1) 100%);
+background: -o-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(243,129,129,1) 1%, rgba(252,227,138,1) 100%);
+background: -ms-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(243,129,129,1) 1%, rgba(252,227,138,1) 100%);
+background: linear-gradient(to bottom, rgba(243,129,129,1) 0%, rgba(243,129,129,1) 1%, rgba(252,227,138,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#fce38a', GradientType=0 );
+
+}
+
+
+
+

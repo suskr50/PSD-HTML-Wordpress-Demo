@@ -1,0 +1,480 @@
+/*
+ Theme Name:   activello Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  activello Child Theme
+ Author:       Susan Schrum
+ Author URI:   http://skswebdev.com
+ Template:     activello
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  activello-child
+ */
+ @import 'variables';
+ @import '_mixins';
+
+ body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+  font-size: 50px;
+  font-weight:$bold;
+}
+
+h2 {
+  font-size: 36px;
+  color:$header-font-color;
+  font-weight:bold;
+}
+
+h3 {
+  font-size: 20px;
+  color:$main-font-color;
+  font-weight:$light;
+}
+h4 {
+  font-size:24px;
+  color:$header-font-color;
+  font-weight:$bold;
+}
+
+h5 {
+  font-size:17px;
+  color:$header-font-color;
+  font-weight:bold;
+}
+
+p {
+  font-size: 13.5px;
+  color: #5c5c5c;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.LMbutton {
+  border: 1px solid $accent-color;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.PCbutton {
+  background-color: $accent-color;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom:50px;
+}
+
+.embelish {
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+
+  &:after {
+    content: "_______";
+  }
+
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class*=" col-"],
+.row.no-gutters > [class^="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+
+/* Pre Header */
+
+#pre-header {
+  text-align:right;
+  background-color:#f0f2f4;
+  border-bottom:1px solid #e2e2e2;
+  ul {
+
+    list-style-type:none;
+    li {
+      display:inline;
+      margin-left:10px;
+      i {
+        padding-right:10px;
+
+
+
+
+        
+      }
+
+      i.fa-square {
+        color:blue;
+
+      }
+
+
+    }
+  }
+
+
+}
+
+/* Nav Bar */
+
+.navbar {
+  padding:45px;
+
+  .btn-home {
+    float:right;
+    padding:10px;
+    color:white;
+    background-color:#de2b24;
+
+    border-radius:5px;
+    margin-top:-20px;
+  }
+
+  ul {
+    float:right;
+
+    margin-top:30px;
+
+    li >a {
+      padding:0;
+      margin:0;
+      font-size:15px;
+      font-weight:bold;
+      color:$header-font-color;
+      &:hover {
+        color:$red-accent;
+      }
+    }
+
+    li>a::before {
+
+      padding:0 10px;
+      content:"\25Cf";
+
+    }
+
+    li:first-child {
+      a::before {
+        content:none;
+      }
+    }
+
+    li:last-child {
+      a {
+        background-color:#de2b24;
+        padding:15px 30px;
+        margin-top:-15px;
+        color:white;
+      }
+      margin-left:20px;
+
+      a::before {
+        content:none;
+
+      }
+
+    }
+  }
+}
+
+
+/* Top Section */
+.front-top-section {
+  text-align: center;
+  background: purple url("images/hero.jpg") no-repeat center;
+  background-size:cover;
+  min-height:700px;
+  .cta {
+    color: white;
+    margin-top:-20px;
+    h2 {
+      font-size:30px;
+      font-weight:$light;
+      color:white;
+    }
+
+    .inner-front {
+      @include flexit(center,center);
+      min-height:590px;
+
+      a {
+        margin-top:35px;
+        background-color:#f8cd53;
+        border:none;
+        padding:30px 50px;
+        border-radius:10px;
+        font-size:24px;
+        font-weight:$bold;
+        text-transform:uppercase;
+      }
+    }
+  }
+}
+
+
+
+
+.area1 {
+  background-color:pink;
+}
+.area2 {
+  background-color:yellow;
+}
+.area3 {
+  background-color:cyan;
+}
+.areab{
+  background-color:black;
+}
+
+
+
+
+.about {
+  min-height: 240px;
+  padding:100px;
+
+  .card {
+    margin:0 auto;
+    text-align:center;
+    padding:0;
+    .card-block {
+      margin-top:30px;
+    }
+  }
+
+
+}
+
+.approach {
+  min-height: 850px;
+  background-color:#f3f3f3;
+
+  .abox {
+    border:5px solid #e5e5e5;
+    margin-bottom:45px;
+    background-color:white;
+
+    img {
+      width:100%;
+      height:100%;
+    }
+    .pwrap {
+      @include flexit(center,center);
+      padding:0 12%;
+      height:250px;
+      color:white;
+
+    }
+  }
+
+}
+
+.work {
+  min-height: 580px;
+  padding:110px;
+  background-color:#de2b24;
+  
+  .title {
+
+    h2,h3,.embelish {
+      color:white;
+    }
+
+  }
+
+.abox {
+   
+   
+    background-color:#f35e59;
+    text-align:center;
+ 
+    img {
+      width:100%;
+      height:100%;
+    }
+    .pwrap {
+      @include flexit(center,center);
+      padding:0 12%;
+      height:250px;
+      color:white;
+      i {
+      color:#f9bab8;
+    }
+
+    }
+  }
+
+  
+
+}
+
+.contact {
+  min-height: 650px;
+  background-color:#1287bf;
+  padding:100px 0;
+
+  .title {
+
+    h2,h3,.embelish {
+      color:white;
+    }
+
+  }
+
+  .pointer {
+    width:65px;
+    height:65px;
+    border:1px solid white;
+    border-radius:32.5px;
+    @include flexit(center,center);
+    margin:20px auto;
+
+
+    i {
+      font-size:2em;
+      color:white;
+    }
+  }
+
+
+
+  .contact-wrapper {
+
+    background-color:white;
+    min-height:350px;
+    @include flexit(center,center);
+    padding:50px 5%;
+    .wpcf7 {
+
+      margin:0 17%;
+      margin-top:45px;
+
+      input[type="text"],
+      input[type="tel"]
+      {
+
+        height:54px;
+        width: 100%;
+        
+      }
+
+      input[value] {
+        font-size:14px;
+        font-weight:$regular;
+        font-color: #b0b0b0;
+        padding-left:20px;
+      }
+
+
+
+      input[type="submit"]
+      {
+
+       background-color:#de2b24;
+       border:1px solid white;
+       width:50%;
+       margin:0 25%;
+       margin-top:40px;
+       padding:18px 30px;
+       color:white;
+       text-transform:uppercase;
+       font-size:15px;
+       font-weight:$bold;
+
+     }
+   }
+ }
+
+
+
+
+
+
+
+}
+
+.pre-footer {
+  min-height: 320px;
+  background-color:#2a2a2a;
+  padding:90px 0;
+
+  .title {
+    h2 {
+      margin-bottom:40px;
+    }
+
+
+    h2,h3,.embelish {
+      color:white;
+    }
+
+  }
+  
+
+  .cform {
+    width:50%;
+    margin:0 auto;
+    margin-top:30px;
+
+    input[type="email"]
+    {
+      background-color: #515151;
+      border:none;
+      width: 100%;
+      height:55px;
+    }
+
+    input[value] {
+      padding-left:10px;
+      font-size:14px;
+      color:#cecece;
+      margin-top:30px;
+    }
+
+    input[type="submit"]
+
+    {
+     margin-left:37.5%;
+     background:none;
+     border:1px solid white;
+     width: 25%;
+     margin-top:28px;
+     font-weight:bold;
+     font-size:17px;
+     padding:20px;
+   }
+
+ }
+ ul {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  li {
+    display:inline;
+
+  }
+  span {
+    color:white;
+  }
+}
+}
+
+.site-footer {
+  background-color:#515151;
+  text-align:center;
+  padding:21px;
+}

@@ -1,0 +1,522 @@
+/*
+ Theme Name:   activello Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  activello Child Theme
+ Author:       Susan Schrum
+ Author URI:   http://skswebdev.com
+ Template:     activello
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  activello-child
+ */
+/* line 17, scss/style.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 22, scss/style.scss */
+h1 {
+  font-size: 50px;
+  font-weight: "700";
+}
+
+/* line 27, scss/style.scss */
+h2 {
+  font-size: 36px;
+  color: #424242;
+  font-weight: bold;
+}
+
+/* line 33, scss/style.scss */
+h3 {
+  font-size: 20px;
+  color: #424242;
+  font-weight: "300";
+}
+
+/* line 38, scss/style.scss */
+h4 {
+  font-size: 24px;
+  color: #424242;
+  font-weight: "700";
+}
+
+/* line 44, scss/style.scss */
+h5 {
+  font-size: 17px;
+  color: #424242;
+  font-weight: bold;
+}
+
+/* line 50, scss/style.scss */
+p {
+  font-size: 13.5px;
+  color: #5c5c5c;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 56, scss/style.scss */
+.LMbutton {
+  border: 1px solid #2ecc71;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/* line 63, scss/style.scss */
+.PCbutton {
+  background-color: #2ecc71;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/* line 69, scss/style.scss */
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 74, scss/style.scss */
+.embelish {
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 79, scss/style.scss */
+.embelish:after {
+  content: "_______";
+}
+
+/* line 85, scss/style.scss */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 90, scss/style.scss */
+.row.no-gutters > [class*=" col-"],
+.row.no-gutters > [class^="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Pre Header */
+/* line 100, scss/style.scss */
+#pre-header {
+  text-align: right;
+  background-color: #f0f2f4;
+  border-bottom: 1px solid #e2e2e2;
+}
+/* line 104, scss/style.scss */
+#pre-header ul {
+  list-style-type: none;
+}
+/* line 107, scss/style.scss */
+#pre-header ul li {
+  display: inline;
+  margin-left: 10px;
+}
+/* line 110, scss/style.scss */
+#pre-header ul li i {
+  padding-right: 10px;
+}
+/* line 119, scss/style.scss */
+#pre-header ul li i.fa-square {
+  color: blue;
+}
+
+/* Nav Bar */
+/* line 133, scss/style.scss */
+.navbar {
+  padding: 45px;
+}
+/* line 136, scss/style.scss */
+.navbar .btn-home {
+  float: right;
+  padding: 10px;
+  color: white;
+  background-color: #de2b24;
+  border-radius: 5px;
+  margin-top: -20px;
+}
+/* line 146, scss/style.scss */
+.navbar ul {
+  float: right;
+  margin-top: 30px;
+}
+/* line 151, scss/style.scss */
+.navbar ul li > a {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #424242;
+}
+/* line 157, scss/style.scss */
+.navbar ul li > a:hover {
+  color: #de2b24;
+}
+/* line 162, scss/style.scss */
+.navbar ul li > a::before {
+  padding: 0 10px;
+  content: "\25Cf";
+}
+/* line 170, scss/style.scss */
+.navbar ul li:first-child a::before {
+  content: none;
+}
+/* line 175, scss/style.scss */
+.navbar ul li:last-child {
+  margin-left: 20px;
+}
+/* line 176, scss/style.scss */
+.navbar ul li:last-child a {
+  background-color: #de2b24;
+  padding: 15px 30px;
+  margin-top: -15px;
+  color: white;
+}
+/* line 184, scss/style.scss */
+.navbar ul li:last-child a::before {
+  content: none;
+}
+
+/* Top Section */
+/* line 195, scss/style.scss */
+.front-top-section {
+  text-align: center;
+  background: purple url("images/hero.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 700px;
+}
+/* line 200, scss/style.scss */
+.front-top-section .cta {
+  color: white;
+  margin-top: -20px;
+}
+/* line 203, scss/style.scss */
+.front-top-section .cta h2 {
+  font-size: 30px;
+  font-weight: "300";
+  color: white;
+}
+/* line 209, scss/style.scss */
+.front-top-section .cta .inner-front {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  min-height: 590px;
+}
+/* line 213, scss/style.scss */
+.front-top-section .cta .inner-front a {
+  margin-top: 35px;
+  background-color: #f8cd53;
+  border: none;
+  padding: 30px 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: "700";
+  text-transform: uppercase;
+}
+
+/* line 230, scss/style.scss */
+.area1 {
+  background-color: pink;
+}
+
+/* line 233, scss/style.scss */
+.area2 {
+  background-color: yellow;
+}
+
+/* line 236, scss/style.scss */
+.area3 {
+  background-color: cyan;
+}
+
+/* line 239, scss/style.scss */
+.areab {
+  background-color: black;
+}
+
+/* line 246, scss/style.scss */
+.about {
+  min-height: 240px;
+  padding: 100px;
+}
+/* line 250, scss/style.scss */
+.about .card {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+/* line 254, scss/style.scss */
+.about .card .card-block {
+  margin-top: 30px;
+}
+
+/* line 262, scss/style.scss */
+.approach {
+  min-height: 850px;
+  background-color: #f3f3f3;
+}
+/* line 266, scss/style.scss */
+.approach .abox {
+  border: 5px solid #e5e5e5;
+  margin-bottom: 45px;
+  background-color: white;
+}
+/* line 271, scss/style.scss */
+.approach .abox img {
+  width: 100%;
+  height: 100%;
+}
+/* line 275, scss/style.scss */
+.approach .abox .pwrap {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 12%;
+  height: 250px;
+  color: white;
+}
+
+/* line 286, scss/style.scss */
+.work {
+  min-height: 580px;
+  padding: 110px;
+  background-color: #de2b24;
+}
+/* line 293, scss/style.scss */
+.work .title h2, .work .title h3, .work .title .embelish {
+  color: white;
+}
+/* line 299, scss/style.scss */
+.work .abox {
+  background-color: #f35e59;
+  text-align: center;
+}
+/* line 305, scss/style.scss */
+.work .abox img {
+  width: 100%;
+  height: 100%;
+}
+/* line 309, scss/style.scss */
+.work .abox .pwrap {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 0 12%;
+  height: 250px;
+  color: white;
+}
+/* line 314, scss/style.scss */
+.work .abox .pwrap i {
+  color: #f9bab8;
+}
+
+/* line 325, scss/style.scss */
+.contact {
+  min-height: 650px;
+  background-color: #1287bf;
+  padding: 100px 0;
+}
+/* line 332, scss/style.scss */
+.contact .title h2, .contact .title h3, .contact .title .embelish {
+  color: white;
+}
+/* line 338, scss/style.scss */
+.contact .pointer {
+  width: 65px;
+  height: 65px;
+  border: 1px solid white;
+  border-radius: 32.5px;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: 20px auto;
+}
+/* line 347, scss/style.scss */
+.contact .pointer i {
+  font-size: 2em;
+  color: white;
+}
+/* line 355, scss/style.scss */
+.contact .contact-wrapper {
+  background-color: white;
+  min-height: 350px;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 50px 5%;
+}
+/* line 361, scss/style.scss */
+.contact .contact-wrapper .wpcf7 {
+  margin: 0 17%;
+  margin-top: 45px;
+}
+/* line 366, scss/style.scss */
+.contact .contact-wrapper .wpcf7 input[type="text"],
+.contact .contact-wrapper .wpcf7 input[type="tel"] {
+  height: 54px;
+  width: 100%;
+}
+/* line 375, scss/style.scss */
+.contact .contact-wrapper .wpcf7 input[value] {
+  font-size: 14px;
+  font-weight: "400";
+  font-color: #b0b0b0;
+  padding-left: 20px;
+}
+/* line 384, scss/style.scss */
+.contact .contact-wrapper .wpcf7 input[type="submit"] {
+  background-color: #de2b24;
+  border: 1px solid white;
+  width: 50%;
+  margin: 0 25%;
+  margin-top: 40px;
+  padding: 18px 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: "700";
+}
+
+/* line 410, scss/style.scss */
+.pre-footer {
+  min-height: 320px;
+  background-color: #2a2a2a;
+  padding: 90px 0;
+}
+/* line 416, scss/style.scss */
+.pre-footer .title h2 {
+  margin-bottom: 40px;
+}
+/* line 421, scss/style.scss */
+.pre-footer .title h2, .pre-footer .title h3, .pre-footer .title .embelish {
+  color: white;
+}
+/* line 428, scss/style.scss */
+.pre-footer .cform {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* line 433, scss/style.scss */
+.pre-footer .cform input[type="email"] {
+  background-color: #515151;
+  border: none;
+  width: 100%;
+  height: 55px;
+}
+/* line 441, scss/style.scss */
+.pre-footer .cform input[value] {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #cecece;
+  margin-top: 30px;
+}
+/* line 448, scss/style.scss */
+.pre-footer .cform input[type="submit"] {
+  margin-left: 37.5%;
+  background: none;
+  border: 1px solid white;
+  width: 25%;
+  margin-top: 28px;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 20px;
+}
+/* line 462, scss/style.scss */
+.pre-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 466, scss/style.scss */
+.pre-footer ul li {
+  display: inline;
+}
+/* line 470, scss/style.scss */
+.pre-footer ul span {
+  color: white;
+}
+
+/* line 476, scss/style.scss */
+.site-footer {
+  background-color: #515151;
+  text-align: center;
+  padding: 21px;
+}

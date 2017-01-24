@@ -1,0 +1,590 @@
+/* Fixing the WP Admin Notice padding problem */
+.wp-core-ui .notice.is-dismissible {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    max-width: 1000px;
+}
+
+
+/**
+////////////////////////////////////////
+* Placeholder Styling
+////////////////////////////////////////
+*/
+::-webkit-input-placeholder {
+    color: #C7C7C7;
+    opacity: 1 !important;
+}
+
+:-moz-placeholder {
+    color: #C7C7C7;
+}
+
+:-moz-placeholder {
+    color: #C7C7C7;
+}
+
+:-ms-input-placeholder {
+    color: #C7C7C7;
+}
+
+/**
+////////////////////////////////////////
+*   Heading Styling
+////////////////////////////////////////
+**/
+
+.kiwi-wrap h1 {
+    margin: .2em 200px 0 0;
+    padding: 0;
+    color: #32373c;
+    line-height: 1.2em;
+    font-size: 2.8em;
+    font-weight: 400;
+}
+
+/**
+////////////////////////////////////////
+*   Branding Styling
+////////////////////////////////////////
+**/
+.kiwi-wrap {
+    position: relative;
+    margin: 25px 40px 0 20px;
+    max-width: 1250px;
+    font-size: 15px;
+}
+
+.kiwi-wrap .kiwi-about-text {
+    margin: 1em 200px 1em 0;
+    min-height: 60px;
+    color: #555d66;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.kiwi-wrap .kiwi-badge {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+	.kiwi-wrap .kiwi-badge:before {
+		font-family: 'Dashicons';
+		content: '\f240';
+		font-size: 72px;
+		top: 35px;
+		position: relative;
+	}
+    .kiwi-wrap .kiwi-badge {
+	    background-color: #38cb87;
+        color: #fff;
+        text-align: center;
+        margin: 5px 0 0;
+        padding-top: 0;
+        height: 120px;
+        display: inline-block;
+        width: 120px;
+        text-rendering: optimizeLegibility;
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+    }
+
+    .kiwi-wrap .kiwi-badge span {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        height: 30px;
+    }
+
+/**
+////////////////////////////////////////
+* Kiwi Form Styling
+////////////////////////////////////////
+*/
+
+
+.kiwi-field-description {
+    font-style: italic;
+    font-size: 11px;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+}
+
+/* Form Wrapper for fields */
+.kiwi-form-wrapper {
+    background-color: #FFF;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+    .kiwi-form-wrapper fieldset {
+        margin: 8px auto;
+    }
+
+    .kiwi-form-wrapper select {
+        margin-top: 8px;
+    }
+
+
+.kiwi-form-wrapper p.submit {
+    text-align: right;
+}
+
+/**
+////////////////////////////////////////
+* Kiwi Form Wrapper :: Right Side
+////////////////////////////////////////
+*/
+.kiwi-form-wrapper-right {
+    float: right;
+    width: 48%;
+}
+
+    .kiwi-form-wrapper-right .field-type-text input[type="text"] {
+        min-height: 35px;
+        border: 1px solid #e7e9ee;
+        text-indent: 5px;
+        box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.07);
+        border-radius: 5px;
+    }
+
+        .kiwi-form-wrapper-right .field-type-text input:focus {
+            border-color: rgba(231, 233, 238, 0.8);
+            box-shadow: 0 1px 1px rgba(231, 233, 238, 0.075) inset, 0 0 8px rgba(231, 233, 238, 0.6);
+            outline: 0 none;
+        }
+
+    .kiwi-form-wrapper-right select {
+        border-radius: 5px;
+        width: 50%;
+        box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.07);
+    }
+
+/**
+////////////////////////////////////////
+* Kiwi Form Wrapper :: Left Side
+////////////////////////////////////////
+*/
+.kiwi-form-wrapper-left {
+    float: left;
+    width: 48%;
+}
+
+/**
+////////////////////////////////////////
+*   Kiwi Field Type :: Heading
+////////////////////////////////////////
+**/
+
+.kiwi-form-heading {
+    padding: 8px 0;
+    font-weight: 400;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+    .kiwi-form-heading .first-word {
+        font-weight: 900;
+    }
+
+.kiwi-form-heading .kiwi-sub-title {
+    float: right;
+    margin-right: 5px;
+    font-style: italic;
+    font-size: 13px;
+    color: #bdbdbd !important;
+}
+/**
+////////////////////////////////////////
+*   END Heading Field Type
+////////////////////////////////////////
+**/
+
+
+/**
+////////////////////////////////////////
+*   Kiwi Field Type :: Checkbox Toggle
+////////////////////////////////////////
+**/
+
+/* On/off switch */
+.kiwi-switch {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 75px;
+    height: 25px;
+    padding: 3px;
+    margin: 10px;
+    background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+    background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+    border-radius: 18px;
+    box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+
+.kiwi-switch-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+    .kiwi-switch-input:checked ~ .kiwi-switch-label {
+        background: #38cb87;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .kiwi-switch-input:checked ~ .kiwi-switch-label:before {
+        opacity: 0;
+    }
+
+    .kiwi-switch-input:checked ~ .kiwi-switch-label:after {
+        opacity: 1;
+    }
+
+
+.kiwi-switch-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #e7e9ee;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+}
+
+    .kiwi-switch-label:before, .kiwi-switch-label:after {
+        position: absolute;
+        top: 50%;
+        margin-top: -.5em;
+        line-height: 1;
+        -webkit-transition: inherit;
+        -moz-transition: inherit;
+        -o-transition: inherit;
+        transition: inherit;
+    }
+
+    .kiwi-switch-label:before {
+        content: attr(data-off);
+        right: 11px;
+        color: #aaaaaa;
+        text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .kiwi-switch-label:after {
+        content: attr(data-on);
+        left: 11px;
+        color: #FFFFFF;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+    }
+
+
+.kiwi-switch-handle {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+    .kiwi-switch-handle:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -6px 0 0 -6px;
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+        background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+        border-radius: 6px;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+    }
+
+.kiwi-switch-input:checked ~ .kiwi-switch-handle {
+    left: 54px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Transition
+========================== */
+.kiwi-switch-label, .kiwi-switch-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+}
+
+.kiwi-checkbox-toggle-wrapper > .kiwi-checkbox-toggle-form-label {
+    position: relative;
+    top: 15px;
+}
+
+/**
+////////////////////////////////////////
+*   END Checkbox Toggle Field Type
+////////////////////////////////////////
+**/
+
+/**
+////////////////////////////////////////
+*   Kiwi Field Type :: Sortable Checkboxes
+////////////////////////////////////////
+**/
+
+fieldset.kiwi-checkbox-sortable-wrapper .kiwi-switch {
+    float: right;
+}
+
+fieldset.kiwi-checkbox-sortable-wrapper {
+
+    background-color: #fafdfe;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 3px auto;
+    border: 1px solid #e5e5e5;
+}
+
+fieldset.kiwi-checkbox-sortable-wrapper:hover { cursor: move; }
+
+	fieldset.kiwi-checkbox-sortable-wrapper.kiwi-sortable-disabled {opacity: .5; }
+	fieldset.kiwi-checkbox-sortable-wrapper.kiwi-sortable-disabled span img {
+		-wekbit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+
+    fieldset.kiwi-checkbox-sortable-wrapper .kiwi-sortable-form-label {
+        margin-right: 0;
+        position: relative;
+        float: left;
+        top: 5px;
+        left: 15px;
+	    font-weight: 600;
+	    font-size: 14px;
+    }
+
+         .kiwi-sortable-form-label span {
+	        background-size: 26px 26px;
+	        background-position: center center;
+	        width: 26px;
+	        height: 26px;
+	        margin-right: 10px;
+	        display: inline-block;
+	        position: relative;
+	        top: 7px;
+        }
+             .kiwi-sortable-form-label span img {
+	            max-width: 26px;
+	            height:auto;
+            }
+
+
+    .kiwi-checkbox-sortable-placeholder {
+        height: 50px;
+        border: dashed 1px #CCC;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    fieldset.kiwi-checkbox-sortable-wrapper .kiwi-sortable-helper {
+        width: 25px;
+        height: 50px;
+        float: left;
+        border-right: 1px solid #edf0f1;
+        background: url('../images/sortable-helper.png') center center no-repeat;
+    }
+
+
+/**
+////////////////////////////////////////
+*   END Sortable Checkboxes Field Type
+////////////////////////////////////////
+**/
+
+
+/**
+////////////////////////////////////////
+*   Kiwi Field Type :: Radio Image
+////////////////////////////////////////
+**/
+
+.kiwi-field-wrapper .kiwi-radio-img-field img {
+    border-radius: 5px;
+}
+
+/* Field Type: Radio - Image */
+.kiwi-radio-img-wrapper input[type="radio"] {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.kiwi-form-label.radio-img {
+    margin: 8px 0 8px 3px;
+    display: block;
+}
+
+.kiwi-radio-img-wrapper .kiwi-hidden-input {
+    left: -10000px;
+    position: absolute;
+    top: -1000px;
+}
+
+.kiwi-field-description.img-radio {
+    font-style: normal;
+    font-size: 12px;
+    margin-left: 3px;
+    padding-bottom: 8px;
+    position: static;
+    top: 0;
+    color: #C7C7C7;
+}
+
+.kiwi-field-wrapper.kiwi-radio-img {
+    width: 100%;
+    margin-top: 0;
+}
+
+.kiwi-field-wrapper label.kiwi-field-helper-radio-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.kiwi-field-wrapper.kiwi-radio-img .kiwi-radio-img-field {
+    display: inline-block;
+    width: calc(25% - 4px);
+    margin-right: 4px;
+    border: 2px solid #e7e9ee;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.kiwi-field-wrapper.kiwi-radio-img .kiwi-radio-img-field:hover,
+.kiwi-field-wrapper.kiwi-radio-img .kiwi-radio-img-field:focus {
+    border: 2px solid #38cb87;
+}
+
+.kiwi-radio-img-field.kiwi-active-field {
+    border: 2px solid #38cb87 !important;
+}
+
+/**
+////////////////////////////////////////
+*   END Radio Image Field Type
+////////////////////////////////////////
+**/
+
+/**
+////////////////////////////////////////
+*   Kiwi Field Type :: Radio Default
+////////////////////////////////////////
+**/
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+.kiwi-form-wrapper input[type=radio] {
+    display: none;
+    margin: 10px;
+}
+
+    /* Change the look'n'feel of labels (which are adjacent to radiobuttons). Add some margin, padding to label */
+    .kiwi-form-wrapper input[type=radio] + label {
+        display: inline-block;
+        margin: -2px;
+        padding: 4px 12px;
+        background-color: #e7e7e7;
+        border-color: #ddd;
+    }
+
+    .kiwi-form-wrapper input[type=radio] + label:first-of-type {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .kiwi-form-wrapper input[type=radio] + label:last-of-type {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    /* Change background color for label next to checked radio button to make it look like highlighted button */
+    .kiwi-form-wrapper input[type=radio]:checked + label {
+        background-image: none;
+        background-color: #d0d0d0;
+    }
+
+    .kiwi-form-wrapper input[type=radio] {
+        display: none;
+    }
+
+    .kiwi-form-wrapper input[type=radio] + label {
+        display: inline-block;
+        margin: -2px;
+        padding: 4px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333;
+        text-align: center;
+        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+        vertical-align: middle;
+        cursor: pointer;
+        background-color: #f5f5f5;
+        background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+        background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+        background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+        background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+        background-repeat: repeat-x;
+        border: 1px solid #ccc;
+        border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+        border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+        border-bottom-color: #b3b3b3;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+        -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .kiwi-form-wrapper input[type=radio]:checked + label {
+        background-image: none;
+        outline: 0;
+        -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+        background-color: #e0e0e0;
+    }
+
+/**
+////////////////////////////////////////
+*   END Radio Default Field Type
+////////////////////////////////////////
+**/

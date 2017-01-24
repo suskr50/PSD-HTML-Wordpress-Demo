@@ -1,0 +1,13 @@
+#demo_content {
+	text-align: center;
+}
+#demo_content .spinner {
+	float: none;
+}
+#demo_content .updated-message,
+#demo_content .spinner {
+	display: none;
+}
+#demo_content .spinner.is-active {
+	display: inline-block;
+}
