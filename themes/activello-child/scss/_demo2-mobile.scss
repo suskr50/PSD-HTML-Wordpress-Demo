@@ -1,0 +1,128 @@
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+  
+  #work {
+   
+    .abox {
+      .pwrap {
+        height:230px;
+      }
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+  
+  #work {
+   
+    .abox {
+      .pwrap {
+        height:177px;
+      }
+    }
+  }
+
+  /* PreFooter */
+  #pre-footer {
+   
+    .cform {
+
+      input[type="submit"]{
+       margin-left:32%;
+       width: 35%;
+
+     }
+
+   }
+  }
+
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+  #about {
+     .card {
+  
+      padding:40px 100px;
+      
+    }
+  }
+
+  .work {
+   
+    .abox {
+      .pwrap {
+        height:124px;
+      }
+    }
+  }
+
+#contact {
+  
+
+  .contact-wrapper {
+  
+    .wpcf7 {
+
+      input[type="submit"]
+      {
+      width:100%;
+       margin:0;
+       
+
+     }
+   }
+ }
+
+}
+
+  /* PreFooter */
+  #pre-footer {
+   
+    .cform {
+
+      input[type="submit"]{
+       margin-left:0%;
+       width: 100%;
+
+     }
+
+   }
+ }
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+  #about {
+    .card {
+    
+      padding:40px 10px;
+
+      .card-block {
+
+      }
+    }
+  }
+
+} /* end small devices */
+
+/*************************/
+/* Custom, iPhone Retina */
+/*************************/
+@media only screen and (max-width : 320px){
+     
+}

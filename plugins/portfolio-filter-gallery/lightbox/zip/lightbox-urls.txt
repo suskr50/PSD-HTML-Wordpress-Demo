@@ -1,0 +1,2 @@
+LD - http://lokeshdhakar.com/projects/lightbox2/#getting-started
+Bootstrap 3 Light - http://ashleydw.github.io/lightbox/

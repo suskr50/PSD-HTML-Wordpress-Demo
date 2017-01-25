@@ -1,0 +1,88 @@
+/* Filter output css*/
+.filtr-item {
+    padding: 1rem;
+}
+.item-desc {
+	background-color: rgba(0, 0, 0, 0.5);
+    /*border-radius: 5px;*/
+    bottom: 45px;
+    color: white;
+    display: block;
+    font-weight: 300;
+    left: 2rem;
+    padding: 8px;
+    position: absolute;
+    right: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Filter controls */
+.simplefilter li, .sortandshuffle li {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 11px 32px;
+}
+ .sortandshuffle li:hover {
+    border: 4px solid #ffffff;
+    padding: 7px 28px;
+}
+.simplefilter li {
+    /*background-color: #585858;*/
+	border:4px solid;
+	font-weight:400;
+}
+.simplefilter li:hover {
+  
+    /*border: 4px solid #ffffff;*/
+   background-color: #585858;
+    /*padding: 11px 36px;*/
+}
+
+.simplefilter li.active {
+    background-color: #000000;
+	color:#FFFFFF;
+	
+}
+
+
+/* Shuffle and sort controls */
+
+.sortandshuffle .shuffle-btn {
+    background-color: #dec800;
+}
+.sortandshuffle .sort-btn {
+    background-color: #de0000;
+}
+.sortandshuffle .sort-btn.active {
+    background-color: #9d0000;
+}
+
+/* Search control */
+.search-row {
+    margin-left: 2.5rem;
+}
+.filtr-search {
+	border: 5px solid #ccc !important;
+	 padding: 7px 30px 6px !important;
+	text-transform: uppercase;
+}
+.item-position {
+	background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    bottom: auto;
+    left: 3rem;
+    padding: 0.75rem 1.25rem;
+    right: auto;
+    top: 3rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}

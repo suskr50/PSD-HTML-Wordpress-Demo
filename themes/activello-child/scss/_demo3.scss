@@ -1,0 +1,288 @@
+#blueeasy {
+  font-family: 'Lato', sans-serif;
+
+  /* Page Global */
+
+ .title {
+  text-align: left;
+  
+}
+
+.embelish {
+  color: black;
+ margin-bottom:34px;
+ margin-top:-20px;
+ 
+
+  &:after {
+    content: "_______";
+  }
+
+}
+
+  /* Nav Bar */
+
+  .navbar {
+    padding:50px 0;
+    background-color:#39444b;
+    opacity:0.85;
+    height:100px;
+
+    .container {
+      margin-top:-25px;
+    }
+
+    .btn-home {
+      float:right;
+      padding:10px;
+      color:white;
+      background-color:#de2b24;
+      border-radius:5px;
+      margin-top:-20px;
+    }
+
+    ul {
+      float:right;
+
+
+
+      li >a {
+
+        color:white;
+        &:hover {
+          color:$be-accent-color;
+          border:1px solid $be-accent-color;
+          padding:10px;
+        }
+      }
+
+
+
+    }
+  }
+
+
+
+
+
+  /* Top Section */
+  .front-top-section {
+    text-align: center;
+    background: purple url("images/blueeasy/hero.jpg") no-repeat center;
+    background-size:cover;
+    min-height:700px;
+    .cta {
+      color: white;
+      margin-top:-20px;
+      h2 {
+        font-size:30px;
+        font-weight:$light;
+        color:white;
+      }
+
+      .inner-front {
+        @include flexit(center,center);
+        min-height:590px;
+
+        a {
+          margin-top:35px;
+          background-color:#f8cd53;
+          border:none;
+          padding:30px 50px;
+          border-radius:10px;
+          font-size:24px;
+          font-weight:$bold;
+          text-transform:uppercase;
+        }
+      }
+    }
+  }
+
+  /* Service Sectoin */
+
+  .services {
+    background-color:$be-accent-color;
+    min-height:200px;
+    padding:100px 0;
+
+    .title,.embelish {
+      color:white;
+    }
+
+    .card-title {
+      margin:28px 0;
+
+    }
+  }
+
+  /* Portfolio Section*/
+  .work {
+   min-height:625px;
+    padding:100px;
+   
+
+
+    .abox {
+
+
+
+      text-align:center;
+
+      img {
+        width:100%;
+        height:100%;
+      }
+      .pwrap {
+        @include flexit(center,center);
+        padding:0 12%;
+        height:250px;
+        color:white;
+        i {
+          color:#f9bab8;
+        }
+
+      }
+    }
+
+
+
+  }
+
+  /* About section */
+
+  .about {
+    background: purple url("images/blueeasy/about.jpg") no-repeat center;
+    p {
+      color:$be-alt-font-color;
+    }
+    ul {
+      list-style-type:none;
+      li {
+        display:inline;
+        i {
+          border:1px solid black;
+          background:none;
+          padding:10px;
+          color:white;
+        }
+      }
+    }
+  }
+
+  /* Just Default Section */
+
+  .just {
+    background-color:#515f67;
+  }
+
+
+
+  /* About section */
+
+  .contact {
+
+    background: purple url("images/blueeasy/contact.jpg") no-repeat center;
+    min-height:800px;
+    padding:100px 0;
+
+    .be-contact-wrapper {
+      position:relative;
+      
+
+      .contact-text {
+        width:50%;
+        position:absolute;
+        top:0;
+        right:0;
+        z-index:2;
+        padding-top:16px;
+        p {
+          color:white;
+        }
+
+      }
+
+
+
+      #wpcf7-f4-p655-o1 {
+
+        position:absolute;
+        top:0;
+        left:0;
+        margin:0;
+        padding:0;
+        z-index:1;
+        width:100%;
+
+        label{
+          color:white;
+        }
+        input[type="text"],
+        input[type="email"]
+        {
+          width:40%;
+          height:65px;
+          background:none;
+          border: 1px solid white;
+
+
+
+        }
+
+        textarea {
+          width:100%;
+          background:none;
+          border: 1px solid white;
+        }
+
+        input[value] {
+
+        }
+
+        input[type="submit"]
+        {
+         background-color:$be-accent-color;
+         border:none;
+         height:61px;
+         color:white;
+         text-transform:uppercase;
+         font-size:15px;
+         font-weight:$bold;
+         width:25%;
+       }
+     }
+   }
+
+
+   .testimonial {
+
+    .tauthor {
+      color:$be-accent-color;
+    }
+  }
+  .twitter-api {
+    background-color:yellow;
+  }
+
+  /* Just Default Section */
+
+  .just {
+    background-color:#515f67;
+  }
+
+
+
+
+
+  .site-footer {
+    background-color:#4bcaff;
+  }
+
+
+
+
+
+}
+
+
+} // end of blueeasy

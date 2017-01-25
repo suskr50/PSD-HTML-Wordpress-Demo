@@ -7,10 +7,8 @@ function my_theme_enqueue_styles() {
 ?>
 
 function actchild_scripts() {
-    wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,700 ');
+    wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Bitter:700|Lato:300,400,700,900|Open+Sans|Roboto:300,400,700 ');
     
 }
 
 add_action( 'wp_enqueue_scripts', 'actchild_scripts' );
-
- 
